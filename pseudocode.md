@@ -18,15 +18,46 @@
 15. Download the app. 
 
 ## Objects 
+
 ### Phone OS 
 * Determines whether the *app store* or *play store* will be used.
 * Apple phone will require using the **App Store** and Android will require the **Google Play Store**.
-### Store Landing Page 
-* Should allow you access different aspects of the store such as genres and types of apps.
+
+### Store Landing Page
+ * Should allow you access different aspects of the store such as genres and types of apps.
+
 ### Search Bar 
 * Allows you to input specific data that brings you to a page that lists relevant apps according to your search inquiry.
+
 ### App landing Page 
 * Where you can view reviews, developer information, app information, and download the app itself. 
+
+## Functions Based on Objects
+
+### Phone OS
+* detectOs() => determines whether you have an Android or Apple Phone.
+* openStore() => opens play store or app store respectively.
+
+### Store Landing page
+* onScroll() => allows you to scroll and look through recommended and featured apps.
+* selectGenre() => choosing a genre sends you to a page that shows apps based on the genre.
+* appCategory() => allows you to select between apps, games, books, and movies and sends you to the respective page. 
+* appAudience() => takes you to pages based on content ratings. Discerns between games made for kids and/or adults.
+* appCost() => Determines whether the app is free or not and sorts between the two. 
+* topApps() => shows the apps in order from best to worst based on average user rating.
+
+### Search bar
+* userInput() => allows user to input anything into the search bar field and it will return results that are related to the inquiry. 
+
+### App Landing Page 
+* writeReview() => If you have already seen the app you can write a review or you can just view what people say about the app.
+* downloadAmount() => view only. This tells you how many people have downloaded the app. 
+* devContact() => veiw contact info for the developer asuming that you have bugs to report, or if you just want to say hi. 
+* relatedApps() => allows you to view apps similar to the page you are looking at. 
+* downloadApp() => does what we came here to do. Extracts thhe files from the app store and puts it on your phone. 
+
+## Pseudocode
+
 
 
 
