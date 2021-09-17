@@ -35,11 +35,11 @@
 ## Functions Based on Objects
 
 ### Phone OS
-* detectOs() => determines whether you have an Android or Apple Phone.
+* getOs() => determines whether you have an Android or Apple Phone.
 * openStore() => opens play store or app store respectively.
 
 ### Store Landing page
-* onScroll() => allows you to scroll and look through recommended and featured apps.
+* onClick() => allows you to scroll and look through recommended and featured apps.
 * selectGenre() => choosing a genre sends you to a page that shows apps based on the genre.
 * appCategory() => allows you to select between apps, games, books, and movies and sends you to the respective page. 
 * appAudience() => takes you to pages based on content ratings. Discerns between games made for kids and/or adults.
@@ -57,6 +57,41 @@
 * downloadApp() => does what we came here to do. Extracts thhe files from the app store and puts it on your phone. 
 
 ## Pseudocode
+### Determine which store to use
+
+```
+Start
+
+// Funtion that gets the OS
+
+function getOs() {
+    If (os === android) {
+        launch googlePlayStore
+    }
+    else if (os === ios) {
+        launch appStore
+    }
+}
+End
+```
+### Scroll through store landing page
+
+```
+Start
+
+recomended.apps onClick() => opens a page that shows apps based on ones that you have downloaded in the past.
+
+featured.apps onClick() => shows the apps that have gotten downloaded the most and reviewed the highest in the last x amount of days. 
+
+medium.app onClick() => lets you choose between books, apps, games, and movies and displays apps pertaining to that particular medium.
+
+
+
+
+
+
+
+
 
 
 
